@@ -5,11 +5,20 @@ Code for the paper **Diverse and Faithful Knowledge-Grounded Dialogue Generation
 The paper will be presented at ICML 2023. This code has been written using PyTorch. If you use source codes in this repository in your work, please cite the following papers:
 
 <pre>
-@article{xu2023diverse,
-  title={Diverse and Faithful Knowledge-Grounded Dialogue Generation via Sequential Posterior Inference},
-  author={Xu, Yan and Kong, Deqian and Xu, Dehong and Ji, Ziwei and Pang, Bo and Fung, Pascale and Wu, Ying Nian},
-  journal={arXiv preprint arXiv:2306.01153},
-  year={2023}
+@inproceedings{pmlr-v202-xu23j,
+	author = {Xu, Yan and Kong, Deqian and Xu, Dehong and Ji, Ziwei and Pang, Bo and Fung, Pascale and Wu, Ying Nian},
+	booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+	editor = {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+	month = {23--29 Jul},
+	pages = {38518--38534},
+	pdf = {https://proceedings.mlr.press/v202/xu23j/xu23j.pdf},
+	publisher = {PMLR},
+	series = {Proceedings of Machine Learning Research},
+	title = {Diverse and Faithful Knowledge-Grounded Dialogue Generation via Sequential Posterior Inference},
+	url = {https://proceedings.mlr.press/v202/xu23j.html},
+	volume = {202},
+	year = {2023},
+	bdsk-url-1 = {https://proceedings.mlr.press/v202/xu23j.html}
 }
 </pre>
 
