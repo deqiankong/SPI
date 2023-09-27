@@ -35,7 +35,7 @@ conda activate dial-env
 
 To run both training and prediction of SPI, you need to prepare the data for experiments.
 
-1. Download datasets from the official links or [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/yxucb_connect_ust_hk/EuM6RFbNnyZOiLRyp_SIEtsBRAWq85TI2WaZywJWPGTYHw?e=rxbicW).
+1. Download datasets from the official links.
 
 2. Put the downloaded datasets under `data` folder, named as `wizard_of_wikipedia` and `holle`, respectively.
 
@@ -50,6 +50,8 @@ python src/data_utils/holle_proc.py --preproc_dir data/processed_holle
 4. The processed data will be stored under the `preproc_dir`. Do not modify the above path, or you will have to modify 
 the hard-coded path in `src/data_utils/wizard_of_wikipedia.py` and `src/data_utils/holle.py`.
 
+**Alternatively**, you can also download the pre-processed data directly from [here](https://hkustconnect-my.sharepoint.com/:f:/g/personal/yxucb_connect_ust_hk/EuM6RFbNnyZOiLRyp_SIEtsBRAWq85TI2WaZywJWPGTYHw?e=rxbicW).
+
 
 # Training
 
@@ -59,13 +61,13 @@ For reproducibility, you can access our pre-trained weights from [here](https://
 sh run_spi.sh
 ```
 
-In `run_spi.sh`, the command line for training four different models are provided. Please use them based on your need.
+In `run_spi.sh`, the command line for training four different models is provided. Please use them based on your needs.
 
 
 # Prediction
 
-Given one checkpoint, we can evaluate our model with the following command line. The script will compute the perplexity 
-of generating the gold responses and generate responses given the data samples in the test set.
+Given one checkpoint, we can evaluate our model with the following command line. The script will 1) compute the perplexity 
+of generating the gold responses and 2）generate responses given the data samples in the test set.
 
 ```console
 sh predict_spi.sh
